@@ -58,7 +58,43 @@ body{
     padding: 1rem 0;
 }
 
+/* ## Footer */
+.footer{
+    color: #335576;
+    background-color: #FEFAF5;
 
+    padding: 2rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+}
+
+.footer__subheading{
+    color: #335576;
+}
+
+.footer__label{
+    font-size: .8rem;
+    font-weight: 400;
+    color: #DB7A4E;
+}
+
+.footer__hours-list{
+    display: flex;
+    gap: 3rem;
+}
+
+.footer__icons-list{
+    margin-top: 3.25rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.footer__icon{
+    height: 1.5rem;
+}
 
 /* # Generic Components */
 
@@ -78,6 +114,7 @@ body{
     gap: 3rem;
 }
 
+/* ##Card */
 .card{
     width: 20rem;
     height: 30rem;
