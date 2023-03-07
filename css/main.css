@@ -1,3 +1,6 @@
+/* # Specific Components */
+
+/* ## Intro Section */
 .intro{
     background-color: #FEFAF5;
     height: 35rem;
@@ -29,4 +32,23 @@
 
 .intro__hero{
     height: 25rem;
+}
+
+/* ## Recommendations Section */
+.recommendations{
+    /* height: 35rem; */
+    
+    padding: 2rem 6rem; 
+}
+
+.recommendations__title{
+    color: #335576;
+}
+
+.card--recommendation__title{
+    text-align: right;
+    color: white;
+    width: 100%;
+    padding-right: 1.75rem;
+    align-self: flex-end
 }
