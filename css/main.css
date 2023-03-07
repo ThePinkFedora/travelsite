@@ -1,0 +1,32 @@
+.intro{
+    background-color: #FEFAF5;
+    height: 35rem;
+
+    padding: 6rem;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+}
+
+.intro__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.intro__title{
+    font-size: 3rem;
+    color: #335576;
+    margin: 0;
+}
+
+.intro__subtitle{
+    color: #335576;
+}
+
+.intro__hero{
+    height: 25rem;
+}
