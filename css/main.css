@@ -45,6 +45,10 @@
     color: #335576;
 }
 
+.card--recommendation{
+    height: 30rem;
+}
+
 .card--recommendation__title{
     text-align: right;
     color: white;

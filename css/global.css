@@ -116,11 +116,15 @@ body{
 
 /* ##Card */
 .card{
+    background: white;
+
     width: 20rem;
-    height: 30rem;
+    /* height: 30rem; */
     border-radius: 5px;
     position: relative;
     overflow: hidden;
+
+    z-index: 0;
 }
 
 .card--shadow{
