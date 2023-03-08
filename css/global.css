@@ -149,11 +149,19 @@ body{
     display: flex;
 }
 
-.card__card-link::after{
+/* Covers parent container with link
+
+ ***Removed as requirements specify wrapping <a> tags around the cards */
+/* .card__card-link::after{
     content: ' ';
     position: absolute;
     top:0;
     left:0;
     bottom:0;
     right: 0;
+} */
+
+/* ## */
+.card-link-wrapper{
+    text-decoration: none;
 }
