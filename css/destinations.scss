@@ -28,24 +28,23 @@
 .itinerary-card{
     padding: 1rem;
     padding-bottom: 3.5rem;
-}
 
-.itinerary-card__title{
-    text-align: center;
-    border-bottom: 4px solid black;
-    margin: 0 0 2rem 0;
+    &__title{
+        text-align: center;
+        border-bottom: 4px solid black;
+        margin: 0 0 2rem 0;
+    }
 }
 
 .activity-list{
     list-style-type: none;
     text-align: center;
     padding:0;
+
+    &__item{
+        background-color: colors.$neutral-color;
+        margin: 1.25rem 0;
+        padding: 1rem;
+    }
 }
 
-.activity-list__item{
-    // background-color: #FEFAF5;
-    background-color: colors.$neutral-color;
-    margin: 1.25rem 0;
-    padding: 1rem;
-
-}

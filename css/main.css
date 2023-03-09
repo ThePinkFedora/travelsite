@@ -8,7 +8,6 @@
   justify-content: space-between;
   gap: 8rem;
 }
-
 .intro__content {
   display: flex;
   flex-direction: column;
@@ -16,27 +15,22 @@
   align-items: flex-start;
   gap: 1rem;
 }
-
 .intro__title {
   font-size: 3rem;
   color: #335576;
   margin: 0;
 }
-
 .intro__subtitle {
   color: #335576;
 }
-
 .intro__hero {
   height: 25rem;
 }
 
 /* ## Recommendations Section */
 .recommendations {
-  /* height: 35rem; */
   padding: 2rem 6rem 5rem 6rem;
 }
-
 .recommendations__title {
   color: #335576;
 }
@@ -45,15 +39,12 @@
 .recommendation-card {
   height: 30rem;
 }
-
 .recommendation-card .card__background {
   transition: transform 0.5s ease-out;
 }
-
 .recommendation-card:hover .card__background {
   transform: scale(165%);
 }
-
 .recommendation-card__title {
   text-align: right;
   color: white;

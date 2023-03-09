@@ -4,7 +4,6 @@
 
 /* ## Intro Section */
 .intro{
-    // background-color: #FEFAF5;
     background-color: colors.$neutral-color;
     height: 35rem;
 
@@ -13,63 +12,59 @@
     display: flex;
     justify-content: space-between;
     gap: 8rem;
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    &__title{
+        font-size: 3rem;
+        color: colors.$primary-color;
+        margin: 0;
+    }
+    
+    &__subtitle{
+        color: colors.$primary-color;
+    }
+    
+    &__hero{
+        height: 25rem;
+    }
 }
 
-.intro__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
-}
 
-.intro__title{
-    font-size: 3rem;
-    // color: #335576;
-    color: colors.$primary-color;
-    margin: 0;
-}
-
-.intro__subtitle{
-    // color: #335576;
-    color: colors.$primary-color;
-}
-
-.intro__hero{
-    height: 25rem;
-}
 
 /* ## Recommendations Section */
 .recommendations{
-    /* height: 35rem; */
-    
     padding: 2rem 6rem 5rem 6rem;
-}
 
-.recommendations__title{
-    // color: #335576;
-    color: colors.$primary-color;
+    &__title{
+        color: colors.$primary-color;
+    }
 }
-
 
 /* ## Recommendation Card */
 .recommendation-card{
     height: 30rem;
-}
 
-.recommendation-card .card__background{
-    transition: transform .5s ease-out;
-}
-
-.recommendation-card:hover .card__background{
-    transform: scale(165%);
-}
-
-.recommendation-card__title{
-    text-align: right;
-    color: white;
-    width: 100%;
-    padding-right: 1.75rem;
-    align-self: flex-end
+    & .card__background{
+        transition: transform .5s ease-out;
+    }
+    
+    &:hover .card__background{
+        transform: scale(165%);
+    }
+    
+    &__title{
+        text-align: right;
+        color: white;
+        width: 100%;
+        padding-right: 1.75rem;
+        align-self: flex-end
+    }    
 }
 

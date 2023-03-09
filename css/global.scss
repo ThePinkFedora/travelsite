@@ -28,53 +28,45 @@ body{
 
     display: flex;
     justify-content: space-between;
+
+    &__title{
+        margin: auto 0;
+    }
+    
+    &__title-link:any-link{
+        color: colors.$primary-color;
+        text-decoration: none;
+    }
+    
+    &__nav-list{
+        list-style-type: none;
+        display: flex;
+    }
+    
+    &__nav-item{
+        padding: 0 0 1.75rem 0;
+        margin: 0 .5rem;
+
+        &--current{
+            border-bottom: 4px solid colors.$action-color;
+        }
+
+        &:hover{
+            border-bottom: 4px solid colors.$primary-color;
+        }
+    }
+    
+    &__nav-link:any-link{
+        color:black;
+        text-decoration: none;
+    
+        padding: 1rem 0;
+    }    
 }
-
-.main-nav__title{
-    margin: auto 0;
-}
-
-.main-nav__title-link:any-link{
-    // color: #335576;
-    color: colors.$primary-color;
-    text-decoration: none;
-}
-
-
-.main-nav__nav-list{
-    list-style-type: none;
-    display: flex;
-}
-
-.main-nav__nav-item{
-    padding: 0 0 1.75rem 0;
-    margin: 0 .5rem;
-}
-
-.main-nav__nav-item--current{
-    // border-bottom: 4px solid #DB7A4E;
-    border-bottom: 4px solid colors.$action-color;
-}
-
-.main-nav__nav-item:hover{
-    // border-bottom: 4px solid #335576;
-    border-bottom: 4px solid colors.$primary-color;
-}
-
-.main-nav__nav-link:any-link{
-    color:black;
-    text-decoration: none;
-
-    padding: 1rem 0;
-}
-
-
 
 /* ## Footer */
 .footer{
-    // color: #335576;
     color: colors.$primary-color;
-    // background-color: #FEFAF5;
     background-color: colors.$neutral-color;
 
     padding: 2rem;
@@ -82,35 +74,35 @@ body{
     display: flex;
     justify-content: center;
     gap: 9rem;
+
+    &__subheading{
+        color: colors.$primary-color;
+    }
+    
+    &__label{
+        font-size: .8rem;
+        font-weight: 400;
+        color: colors.$action-color;
+    }
+    
+    &__hours-list{
+        display: flex;
+        gap: 3rem;
+    }
+    
+    &__icons-list{
+        margin-top: 3.25rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5rem;
+    }
+    
+    &__icon{
+        height: 1.5rem;
+    }
 }
 
-.footer__subheading{
-    // color: #335576;
-    color: colors.$primary-color;
-}
 
-.footer__label{
-    font-size: .8rem;
-    font-weight: 400;
-    // color: #DB7A4E;
-    color: colors.$action-color;
-}
-
-.footer__hours-list{
-    display: flex;
-    gap: 3rem;
-}
-
-.footer__icons-list{
-    margin-top: 3.25rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 2.5rem;
-}
-
-.footer__icon{
-    height: 1.5rem;
-}
 
 /* # Generic Components */
 
@@ -119,7 +111,6 @@ body{
     text-decoration: none;
     color:white;
     background-color: colors.$action-color;
-    // background-color: #DB7A4E;
     padding: .75rem 3rem;
     border-radius: 6rem;
 }
@@ -136,47 +127,32 @@ body{
     background: white;
 
     width: 20rem;
-    /* height: 30rem; */
     border-radius: 5px;
     position: relative;
     overflow: hidden;
 
     z-index: 0;
+
+    &--shadow{
+        border: 1px solid rgba(0, 0, 0, .2);
+        box-shadow: 0px 4px 4px rgba(0,0,0,.2);
+    }
+    
+    &__background{
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    
+    &__body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
 }
-
-.card--shadow{
-    /* box-shadow: 2px 5px 5px rgba(0,0,0,.25), 0px 0px 0px 1px lightgray; */
-
-    border: 1px solid rgba(0, 0, 0, .2);
-    box-shadow: 0px 4px 4px rgba(0,0,0,.2);
-}
-
-.card__background{
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.card__body{
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-/* Covers parent container with link
-
- ***Removed as requirements specify wrapping <a> tags around the cards */
-/* .card__card-link::after{
-    content: ' ';
-    position: absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right: 0;
-} */
 
 /* ## */
 .card-link-wrapper{
