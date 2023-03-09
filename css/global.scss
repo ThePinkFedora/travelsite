@@ -1,4 +1,5 @@
 @use './partials/colors';
+@use './partials/mixins';
 
 *,*::before,*::after{
     box-sizing: border-box;
@@ -28,6 +29,8 @@ body{
 
     display: flex;
     justify-content: space-between;
+
+    z-index: 100;
 
     &__title{
         margin: auto 0;
@@ -141,12 +144,7 @@ body{
     }
     
     &__background{
-        position: absolute;
-        top:0;
-        left:0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
+        @include mixins.fill-image
     }
     
     &__body{
@@ -160,3 +158,4 @@ body{
 .card-link-wrapper{
     text-decoration: none;
 }
+
