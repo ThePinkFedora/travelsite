@@ -77,12 +77,14 @@ body{
 
     &__subheading{
         color: colors.$primary-color;
+        margin-bottom: 2rem;
     }
     
     &__label{
         font-size: .8rem;
         font-weight: 400;
         color: colors.$action-color;
+        margin-top: 0;
     }
     
     &__hours-list{

@@ -68,11 +68,13 @@ body {
 }
 .footer__subheading {
   color: #335576;
+  margin-bottom: 2rem;
 }
 .footer__label {
   font-size: 0.8rem;
   font-weight: 400;
   color: #DB7A4E;
+  margin-top: 0;
 }
 .footer__hours-list {
   display: flex;
