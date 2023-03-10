@@ -13,8 +13,7 @@ body {
 .main-nav {
   background-color: white;
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
   height: 4rem;
   padding: 0.5rem 6rem;
@@ -89,23 +88,48 @@ body {
 }
 .footer__icon {
   height: 1.5rem;
+  transition: all 0.5s;
+}
+.footer__icon:hover {
+  filter: hue-rotate(210deg) saturate(30);
+  transform: scale(150%) translate(0, -25%);
 }
 
 /* # Generic Components */
 /* ## Link Button */
-.link-button:-moz-any-link {
+.link-button {
   text-decoration: none;
   color: white;
   background-color: #DB7A4E;
   padding: 0.75rem 3rem;
   border-radius: 6rem;
+  transition: all 0.5s;
+  position: relative;
+  z-index: 1;
 }
-.link-button:any-link {
-  text-decoration: none;
-  color: white;
-  background-color: #DB7A4E;
-  padding: 0.75rem 3rem;
-  border-radius: 6rem;
+.link-button * {
+  transition: all 0.5s;
+}
+.link-button::before {
+  content: " ";
+  background-color: orange;
+  opacity: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 10rem;
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+.link-button:hover {
+  transform: scale(110%);
+  letter-spacing: 0.1rem;
+}
+.link-button:hover::before {
+  width: 100%;
+  opacity: 0.25;
 }
 
 /* ## Card List */
@@ -163,7 +187,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .main__background {
   position: absolute;
   width: 100%;
@@ -200,4 +223,8 @@ body {
   background-color: #FEFAF5;
   margin: 1.25rem 0;
   padding: 1rem;
+  transition: all 1s;
+}
+.activity-list__item:hover {
+  background-color: #f2c081;
 }/*# sourceMappingURL=destinations.css.map */
