@@ -64,7 +64,7 @@ body {
   padding: 2rem;
   display: flex;
   justify-content: center;
-  gap: 9rem;
+  gap: 6rem;
 }
 .footer__subheading {
   color: #335576;
@@ -142,7 +142,7 @@ body {
 /* ##Card */
 .card {
   background: white;
-  width: 20rem;
+  width: 18rem;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -154,7 +154,7 @@ body {
 }
 .card__background {
   position: absolute;
-  width: 100%;
+  width: 101%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -176,8 +176,8 @@ body {
 /* ## Intro Section */
 .intro {
   background-color: #FEFAF5;
-  height: 35rem;
-  padding: 6rem;
+  height: 33rem;
+  padding: 4rem 6rem 6rem 6rem;
   display: flex;
   justify-content: space-between;
   gap: 8rem;
@@ -211,7 +211,7 @@ body {
 
 /* ## Recommendation Card */
 .recommendation-card {
-  height: 30rem;
+  height: 27rem;
 }
 .recommendation-card .card__background {
   transition: transform 0.5s ease-out;

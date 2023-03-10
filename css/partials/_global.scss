@@ -75,7 +75,7 @@ body{
 
     display: flex;
     justify-content: center;
-    gap: 9rem;
+    gap: 6rem;
 
     &__subheading{
         color: colors.$primary-color;
@@ -175,7 +175,7 @@ body{
 .card{
     background: white;
 
-    width: 20rem;
+    width: 18rem;
     border-radius: 5px;
     position: relative;
     overflow: hidden;
