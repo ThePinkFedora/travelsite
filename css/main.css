@@ -1,3 +1,153 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Verdana";
+  margin: 0;
+  padding-top: 4rem;
+}
+
+/* # Specific Components */
+/* ## Main NavBar */
+.main-nav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  padding: 0.5rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+.main-nav__title {
+  margin: auto 0;
+}
+.main-nav__title-link:-moz-any-link {
+  color: #335576;
+  text-decoration: none;
+}
+.main-nav__title-link:any-link {
+  color: #335576;
+  text-decoration: none;
+}
+.main-nav__nav-list {
+  list-style-type: none;
+  display: flex;
+}
+.main-nav__nav-item {
+  padding: 0 0 1.75rem 0;
+  margin: 0 0.5rem;
+}
+.main-nav__nav-item--current {
+  border-bottom: 4px solid #DB7A4E;
+}
+.main-nav__nav-item:hover {
+  border-bottom: 4px solid #335576;
+}
+.main-nav__nav-link:-moz-any-link {
+  color: black;
+  text-decoration: none;
+  padding: 1rem 0;
+}
+.main-nav__nav-link:any-link {
+  color: black;
+  text-decoration: none;
+  padding: 1rem 0;
+}
+
+/* ## Footer */
+.footer {
+  color: #335576;
+  background-color: #FEFAF5;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 9rem;
+}
+.footer__subheading {
+  color: #335576;
+  margin-bottom: 2rem;
+}
+.footer__label {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #DB7A4E;
+  margin-top: 0;
+}
+.footer__hours-list {
+  display: flex;
+  gap: 3rem;
+}
+.footer__icons-list {
+  margin-top: 3.25rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+.footer__icon {
+  height: 1.5rem;
+}
+
+/* # Generic Components */
+/* ## Link Button */
+.link-button:-moz-any-link {
+  text-decoration: none;
+  color: white;
+  background-color: #DB7A4E;
+  padding: 0.75rem 3rem;
+  border-radius: 6rem;
+}
+.link-button:any-link {
+  text-decoration: none;
+  color: white;
+  background-color: #DB7A4E;
+  padding: 0.75rem 3rem;
+  border-radius: 6rem;
+}
+
+/* ## Card List */
+.card-list {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* ##Card */
+.card {
+  background: white;
+  width: 20rem;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.card--shadow {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.card__background {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none;
+}
+.card__body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* ## */
+.card-link-wrapper {
+  text-decoration: none;
+}
+
 /* # Specific Components */
 /* ## Intro Section */
 .intro {
