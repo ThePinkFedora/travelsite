@@ -1,0 +1,9 @@
+@keyframes focus-in{
+    from {
+        filter: blur(10px);
+    }
+
+    to{
+        filter: blur(0px);
+    }
+}
