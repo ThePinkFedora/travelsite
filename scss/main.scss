@@ -1,0 +1,102 @@
+@use './partials/global' as *;
+@use './partials/colors';
+
+/* # Specific Components */ 
+
+/* ## Intro Section */
+.intro{
+    background-color: colors.$neutral-color;
+    padding: min(2rem,5vw) calc(15vw - 6.5rem) calc(10vw - 4rem) calc(15vw - 6.5rem);
+    
+    
+
+    display: flex;
+    justify-content: space-between;
+    gap: calc(30vw - 15rem);
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    &__title{
+        font-size: min(2.5rem,4vw);
+        white-space: nowrap;
+        color: colors.$primary-color;
+        margin: 0;
+
+    }
+    
+    &__subtitle{
+        color: colors.$primary-color;
+    }
+    
+    &__hero{
+        height: min(24rem,33vw);
+    }
+
+    @media (max-width: 720px){
+        height: unset;
+        padding: 1rem;
+        flex-direction: column-reverse;
+        gap: 1rem;
+
+        &__content{
+            gap: 0.25rem;
+        }
+    
+        &__title{
+            font-size: min(3rem,7.5vw);
+        }
+    
+        &__hero{
+            width: 90%;
+            height: unset;
+            margin: auto;
+            display: block;
+        }
+    }
+}
+
+
+
+/* ## Recommendations Section */
+.recommendations{
+    padding: min(2rem, 5vw) calc(15vw - 6.5rem) calc(10vw - 4rem) calc(15vw - 6.5rem);
+
+    &__title{
+        color: colors.$primary-color;
+    }
+
+    @media (max-width: 720px){
+        padding: 1rem;
+    }
+}
+
+/* ## Recommendation Card */
+.recommendation-card{
+    height: 27rem;
+
+    .card__background{
+        transition: transform .5s ease-out;
+    }
+    
+    &:hover .card__background{
+        transform: scale(150%) translate(-35%,-35%);
+    }
+    
+    &__title{
+        text-align: right;
+        color: white;
+        width: 100%;
+        padding-right: 1.75rem;
+        align-self: flex-end
+    }    
+
+    @media (max-width: 720px){
+        height: 60vw;
+    }
+}
