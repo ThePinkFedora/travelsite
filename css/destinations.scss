@@ -6,9 +6,11 @@
 
 
 .main{
-    background-position: center;
-    background-size: cover;
-    padding: 0rem 6rem 6rem 6rem;
+    // background-position: center;
+    // background-size: cover;
+    // padding: 0rem 6rem 6rem 6rem;
+    padding: 0 calc(15vw - 6.5rem) max(calc(10vw - 4rem),0.5rem) calc(15vw - 6.5rem);
+    
     position: relative;
     overflow: hidden;
 
@@ -17,38 +19,47 @@
     
         animation-name: focus-in;
         animation-duration: 1s;
+
+        @media (max-width: 720px){
+            width: unset;
+            height: 100%;
+        }
     }
 }
 
 .itinerary__title{
     color:white;
-    font-size: 5rem;
+    font-size: 4rem;
+    margin: 3rem 0;
 }
 
 .itinerary-card{
-    padding: 1rem;
-    padding-bottom: 3.5rem;
+    padding: 1rem 1rem 2.5rem 1rem;
+    text-align: center;
 
     &__title{
-        text-align: center;
+        font-size: 1.25rem;
         border-bottom: 4px solid black;
         margin: 0 0 2rem 0;
+    }
+
+    @media (max-width: 720px){
+        padding-bottom: 0;
     }
 }
 
 .activity-list{
     list-style-type: none;
-    text-align: center;
     padding:0;
 
     &__item{
         background-color: colors.$neutral-color;
-        margin: 1.25rem 0;
+        // margin: 1.25rem 0;
+        margin-bottom: 1rem;
         padding: 1rem;
-        transition: all 1s;
+        transition: background-color 1s;
     
         &:hover{
-            // color: white;
             background-color: darken(colors.$neutral-color, $amount: 25%);
         }
     }
