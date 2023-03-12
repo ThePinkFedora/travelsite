@@ -6,19 +6,12 @@
 /* ## Intro Section */
 .intro{
     background-color: colors.$neutral-color;
-    // height: 30rem;
-
-    // padding: 4rem 6rem 6rem 6rem;
-    // padding: min(4rem,5vw) 7.5vw 7.5vw 7.5vw;
-    // padding: min(4rem,5vw) calc(10vw - 4rem) calc(10vw - 4rem) calc(10vw - 4rem);
     padding: min(2rem,5vw) calc(15vw - 6.5rem) calc(10vw - 4rem) calc(15vw - 6.5rem);
     
     
 
     display: flex;
     justify-content: space-between;
-    // gap: 8rem;
-    // gap: min(8rem, 10vw);
     gap: calc(30vw - 15rem);
 
     &__content{
@@ -30,7 +23,6 @@
     }
     
     &__title{
-        // font-size: 3rem;
         font-size: min(2.5rem,4vw);
         white-space: nowrap;
         color: colors.$primary-color;
@@ -43,7 +35,6 @@
     }
     
     &__hero{
-        // height: 25rem;
         height: min(24rem,33vw);
     }
 
@@ -74,8 +65,6 @@
 
 /* ## Recommendations Section */
 .recommendations{
-    // padding: 2rem 6rem 5rem 6rem;
-    // padding: 2.5vw 7.5vw 6.25vw 7.5vw;
     padding: min(2rem, 5vw) calc(15vw - 6.5rem) calc(10vw - 4rem) calc(15vw - 6.5rem);
 
     &__title{

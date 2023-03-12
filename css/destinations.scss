@@ -6,9 +6,6 @@
 
 
 .main{
-    // background-position: center;
-    // background-size: cover;
-    // padding: 0rem 6rem 6rem 6rem;
     padding: 0 calc(15vw - 6.5rem) max(calc(10vw - 4rem),0.5rem) calc(15vw - 6.5rem);
     
     position: relative;
@@ -54,7 +51,6 @@
 
     &__item{
         background-color: colors.$neutral-color;
-        // margin: 1.25rem 0;
         margin-bottom: 1rem;
         padding: 1rem;
         transition: background-color 1s;
